@@ -55,6 +55,16 @@ nav .navMenu {
     margin: auto 0;
     width: 100%;
     text-align: right;
+    display: inline-block;
+}
+
+nav .mobileNavMenu{
+    display: none;
+    margin: auto 0;
+    width: 100%;
+    text-align: right;
+    opacity: 0;
+    animation: 1s fade ease forwards 1s;
 }
 
 nav .navMenu a {
@@ -127,6 +137,7 @@ nav .navMenu a:last-child {
     animation: 1s fade ease forwards 1.6s;
 }
 
+
 .services {
     margin-top: 50px;
     display: flex;
@@ -173,5 +184,30 @@ nav .navMenu a:last-child {
 @keyframes fade {
     to {
         opacity: 1;
+    }
+}
+
+
+/*MOBILE DESIGN*/
+@media only screen and (max-width: 800px) {
+    .bannerPic img {
+        display: none;
+    }
+    .banner {
+        padding: 5px;
+    }
+    nav .navMenu {
+        vertical-align: middle;
+        margin: auto 0;
+        width: 100%;
+        text-align: right;
+        display: none;
+    }
+    
+    nav .mobileNavMenu{
+        display: inline-block;
+        margin: auto 0;
+        width: 100%;
+        text-align: right;
     }
 }
