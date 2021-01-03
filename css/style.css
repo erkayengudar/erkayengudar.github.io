@@ -1,0 +1,177 @@
+/* FONTS IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    box-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background: url("/img/bannerbg.png");
+    background-position-x: 0px;
+    background-position-y: 0px;
+
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+}
+
+.template {
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    opacity: 0;
+    animation: 1s fade ease forwards 1s;
+}
+
+.container {
+    text-align: left;
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+nav {
+    text-align: left;
+    padding: 5px;
+    display: flex;
+    flex-flow: row;
+    flex-shrink: inherit;
+
+}
+
+nav .headerLogo {
+    height: 50px;
+    opacity: 0;
+    animation: 1s fade ease forwards .5s;
+}
+
+nav .navMenu {
+    vertical-align: middle;
+    margin: auto 0;
+    width: 100%;
+    text-align: right;
+}
+
+nav .navMenu a {
+    margin: 0px 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
+    opacity: 0;
+}
+
+nav .navMenu a:nth-child(1) {
+    margin: 0px 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
+    animation: 1s fade ease forwards 1s;
+}
+
+nav .navMenu a:nth-child(2) {
+    margin: 0px 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
+    animation: 1s fade ease forwards 1.3s;
+}
+
+nav .navMenu a:nth-child(3) {
+    margin: 0px 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
+    animation: 1s fade ease forwards 1.6s;
+}
+
+nav .navMenu a:last-child {
+    margin-right: 0px;
+}
+
+.banner {
+    display: flex;
+}
+
+.bannerTitle {
+    margin: auto auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: left;
+    min-width: 342px;
+    opacity: 0;
+    animation: 1s fade ease forwards 1.3s;
+}
+
+.bannerTitle ul {
+    font-size: 20px;
+    color: gray;
+    font-weight: 400;
+    list-style: none;
+    opacity: 0;
+    animation: 1s fade ease forwards 1.3s;
+}
+
+.bannerPic img {
+    max-width: 350px;
+    opacity: 0;
+    animation: 1s fade ease forwards 1.6s;
+}
+
+.services {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: 1s fade ease forwards 1.3s;
+}
+
+.service {
+    flex: 1;
+    min-width: 200px;
+    margin: 5px;
+}
+
+.serviceTitle {
+    font-weight: bold;
+}
+
+.serviceImg {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.warningPurple {
+    margin-top: 30px;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    background-image: url("/img/info.png");
+    background-color: #401F89;
+    background-position-x: right;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    opacity: 0;
+    animation: 1s fade ease forwards 1s;
+
+}
+
+/* KEYFRAMES */
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
