@@ -45,8 +45,22 @@ nav {
     display: flex;
     flex-flow: row;
     flex-shrink: inherit;
-
+    height: 60px;
+    position: fixed;
+    max-width: 1000px;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(255, 255, 255, .95);
+    border-radius: 0px 0px 10px 10px;
+    
 }
+@supports ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) {
+    nav {
+        background-color: rgba(255, 255, 255, .35);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    }
+  }
 
 nav .headerLogo {
     height: 50px;
@@ -114,6 +128,10 @@ nav .navMenu a:last-child {
 .banner {
     display: flex;
 }
+.topBanner{
+    padding-top: 60px;
+}
+
 
 .bannerTitle {
     margin: auto auto;
@@ -186,7 +204,20 @@ nav .navMenu a:last-child {
     background: url("/img/about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     padding-top: 300px;
+}
+.aboutCards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.aboutCard{
+    flex: 1;
+    margin: 5px;
+    min-width: 200px;
+    width: 100%;
 }
 
 /* KEYFRAMES */
@@ -219,5 +250,13 @@ nav .navMenu a:last-child {
         margin: auto 0;
         width: 100%;
         text-align: right;
+    }
+    .warningPurple{
+        border-radius: 0px;
+    }
+    #about{
+        padding: 300px 5px 20px 5px;
+        text-align: justify;
+        background-position: center;
     }
 }
