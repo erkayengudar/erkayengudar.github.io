@@ -1,7 +1,9 @@
 /* FONTS IMPORTS*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
 
-
+html {
+    scroll-behavior: smooth;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -180,7 +182,7 @@ nav .navMenu a:last-child {
     animation: 1s fade ease forwards 1s;
 
 }
-.about{
+#about{
     background: url("/img/about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
