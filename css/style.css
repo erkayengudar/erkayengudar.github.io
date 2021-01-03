@@ -202,8 +202,8 @@ nav .navMenu a:last-child {
 }
 #about{
     background: url("/img/about.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     padding-top: 300px;
 }
