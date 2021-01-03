@@ -180,6 +180,12 @@ nav .navMenu a:last-child {
     animation: 1s fade ease forwards 1s;
 
 }
+.about{
+    background: url("/img/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+}
 
 /* KEYFRAMES */
 
