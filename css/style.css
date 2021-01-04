@@ -1,6 +1,12 @@
 /* FONTS IMPORTS*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
 
+/*SPECIAL DEFINING*/
+:root{
+    --erka: #401F89;
+}
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -159,9 +165,18 @@ nav .navMenu a:last-child {
     animation: 1s fade ease forwards 1.6s;
 }
 
-
+#services{
+    padding-top: 50px;
+}
+.servicesTitle{
+    color: white;
+    padding: 10px;
+    background-color: var(--erka);
+    width: 100%;
+    font-weight: 800;
+    font-size: 30px;
+}
 .services {
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
@@ -191,7 +206,7 @@ nav .navMenu a:last-child {
     color: white;
     padding: 20px;
     background-image: url("/img/info.png");
-    background-color: #401F89;
+    background-color: var(--erka);
     background-position-x: right;
     background-position-y: 0px;
     background-repeat: no-repeat;
@@ -218,6 +233,27 @@ nav .navMenu a:last-child {
     margin: 5px;
     min-width: 200px;
     width: 100%;
+}
+.whoarewe{
+    width: 100%;
+    height: 700px;
+    background-size: contain;
+    background-position: right;
+    background: linear-gradient(to top, rgba(255,255,255,0) 30px, rgba(255,255,255,1)), url("/img/whoarewe.png");
+    padding-top: 50px;
+    text-align: center;
+}
+.whoareweTop{
+    text-align: center;
+}
+.whoareweTitle{
+    font-weight: 800;
+    font-size: 30px;
+}
+.whoareweSubtitle{
+    margin: auto;
+    width: 300px;
+    border-top: 1px solid black;
 }
 
 /* KEYFRAMES */
