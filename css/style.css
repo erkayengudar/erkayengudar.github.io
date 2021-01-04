@@ -166,7 +166,7 @@ nav .navMenu a:last-child {
 }
 
 #services{
-    padding-top: 50px;
+    scroll-margin-top: 60px;
 }
 .servicesTitle{
     color: white;
