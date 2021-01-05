@@ -236,11 +236,10 @@ nav .navMenu a:last-child {
 }
 .whoarewe{
     width: 100%;
-    height: 700px;
     background-size: contain;
     background-position: right;
     background: linear-gradient(to top, rgba(255,255,255,0) 30px, rgba(255,255,255,1)), url("/img/whoarewe.png");
-    padding-top: 50px;
+    padding: 50px 5px 20px 5px;
     text-align: center;
 }
 .whoareweTop{
@@ -254,6 +253,39 @@ nav .navMenu a:last-child {
     margin: auto;
     width: 300px;
     border-top: 1px solid black;
+}
+.whoareweTemplate{
+    display: flex;
+    flex-basis: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.person{
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    max-width: 200px;
+    margin: 10px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.personImg{
+    border-radius: 10px;
+    width: 180px;
+    height: 260px;
+}
+.personName{
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--erka);
+}
+.personJob{
+    font-size: 12px;
+    color: rgb(83, 80, 80);
 }
 
 /* KEYFRAMES */
