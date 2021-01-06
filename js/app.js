@@ -63,6 +63,3 @@ $(".mobilMenuList a").click(function (e) {
         menuEffect.play()
     }
 })
-$(".headerLogo").click(function (e) {
-        menuEffect.reverse()
-})
