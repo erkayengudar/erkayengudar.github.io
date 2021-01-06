@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
 
 /*SPECIAL DEFINING*/
-:root{
-    --erka: #401F89;
+:root {
+    --erka: #411f89f1;
 }
 
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -58,15 +59,16 @@ nav {
     top: 0px;
     background-color: rgba(255, 255, 255, .95);
     border-radius: 0px 0px 10px 10px;
-    
+
 }
+
 @supports ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) {
     nav {
         background-color: rgba(255, 255, 255, .35);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
     }
-  }
+}
 
 nav .headerLogo {
     height: 50px;
@@ -82,7 +84,7 @@ nav .navMenu {
     display: inline-block;
 }
 
-nav .mobileNavMenu{
+nav .mobileNavMenu {
     display: none;
     margin: auto 0;
     width: 100%;
@@ -131,10 +133,39 @@ nav .navMenu a:last-child {
     margin-right: 0px;
 }
 
+.menuIcon {
+    background: url("/img/menu.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 50px;
+    float: right;
+}
+
+.mobilMenuList {
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: white;
+    color: var(--erka);
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobilMenuList a {
+    color: var(--erka);
+    text-decoration: none;
+    margin: 5px;
+}
+
 .banner {
     display: flex;
 }
-.topBanner{
+
+.topBanner {
     padding-top: 60px;
 }
 
@@ -165,10 +196,11 @@ nav .navMenu a:last-child {
     animation: 1s fade ease forwards 1.6s;
 }
 
-#services{
+#services {
     scroll-margin-top: 60px;
 }
-.servicesTitle{
+
+.servicesTitle {
     color: white;
     padding: 10px;
     background-color: var(--erka);
@@ -176,6 +208,7 @@ nav .navMenu a:last-child {
     font-weight: 800;
     font-size: 30px;
 }
+
 .services {
     display: flex;
     justify-content: space-between;
@@ -215,46 +248,54 @@ nav .navMenu a:last-child {
     animation: 1s fade ease forwards 1s;
 
 }
-#about{
+
+#about {
     background: url("/img/about.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 300px;
 }
-.aboutCards{
+
+.aboutCards {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.aboutCard{
+
+.aboutCard {
     flex: 1;
     margin: 5px;
     min-width: 200px;
     width: 100%;
 }
-.whoarewe{
+
+.whoarewe {
     width: 100%;
     background-size: contain;
     background-position: right;
-    background: linear-gradient(to top, rgba(255,255,255,0) 30px, rgba(255,255,255,1)), url("/img/whoarewe.png");
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 30px, rgba(255, 255, 255, 1)), url("/img/whoarewe.png");
     padding: 50px 5px 20px 5px;
     text-align: center;
 }
-.whoareweTop{
+
+.whoareweTop {
     text-align: center;
 }
-.whoareweTitle{
+
+.whoareweTitle {
     font-weight: 800;
     font-size: 30px;
 }
-.whoareweSubtitle{
+
+.whoareweSubtitle {
     margin: auto;
     width: 300px;
     border-top: 1px solid black;
 }
-.whoareweTemplate{
+
+.whoareweTemplate {
     display: flex;
     flex-basis: 200px;
     flex-direction: row;
@@ -262,7 +303,8 @@ nav .navMenu a:last-child {
     flex-wrap: wrap;
     padding-top: 50px;
 }
-.person{
+
+.person {
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
@@ -273,17 +315,19 @@ nav .navMenu a:last-child {
     transition: all 0.5s;
 }
 
-.personImg{
+.personImg {
     border-radius: 10px;
     width: 180px;
     height: 260px;
 }
-.personName{
+
+.personName {
     font-weight: 800;
     font-size: 15px;
     color: var(--erka);
 }
-.personJob{
+
+.personJob {
     font-size: 12px;
     color: rgb(83, 80, 80);
 }
@@ -302,9 +346,11 @@ nav .navMenu a:last-child {
     .bannerPic img {
         display: none;
     }
+
     .banner {
         padding: 5px;
     }
+
     nav .navMenu {
         vertical-align: middle;
         margin: auto 0;
@@ -312,17 +358,19 @@ nav .navMenu a:last-child {
         text-align: right;
         display: none;
     }
-    
-    nav .mobileNavMenu{
+
+    nav .mobileNavMenu {
         display: inline-block;
         margin: auto 0;
         width: 100%;
         text-align: right;
     }
-    .warningPurple{
+
+    .warningPurple {
         border-radius: 0px;
     }
-    #about{
+
+    #about {
         padding: 300px 5px 20px 5px;
         text-align: justify;
         background-position: center;
