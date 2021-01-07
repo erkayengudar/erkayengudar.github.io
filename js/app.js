@@ -36,30 +36,24 @@ const menuEffect = new TimelineLite({
     paused: true
 });
 
-menuEffect.to('.mobilMenuList', 0.1, {
-    display:'flex',
-    ease: Power2.easeOut
-})
-.to('.mobilMenuList', 0.5, {
-    opacity: 1,
+menuEffect.to("#topMenu", 0.5, {
+    height: '100vh',
     ease: Power2.easeOut
 })
 var isMenuActive = false
+
+function Menu(){
+    if (isMenuActive){
+        isMenuActive= false
+        menuEffect.reverse()
+    }else{
+        isMenuActive= true
+        menuEffect.play()
+    }
+}
 $(".menuIcon").click(function (e) {
-    if (isMenuActive){
-        isMenuActive= false
-        menuEffect.reverse()
-    }else{
-        isMenuActive= true
-        menuEffect.play()
-    }
+    Menu()
 })
-$(".mobilMenuList a").click(function (e) {
-    if (isMenuActive){
-        isMenuActive= false
-        menuEffect.reverse()
-    }else{
-        isMenuActive= true
-        menuEffect.play()
-    }
+$(".mobileMenuList a").click(function (e) {
+    Menu()
 })

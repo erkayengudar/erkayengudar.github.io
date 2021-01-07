@@ -45,25 +45,29 @@ body {
     width: 100%;
 }
 
-nav {
+#topMenu {
+    align-items: center;
     z-index: 2;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    max-width: 1000px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, .95);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+nav {
     text-align: left;
     padding: 5px;
     display: flex;
     flex-flow: row;
     flex-shrink: inherit;
-    height: 60px;
-    position: fixed;
-    max-width: 1000px;
-    width: 100%;
-    top: 0px;
-    background-color: rgba(255, 255, 255, .95);
-    border-radius: 0px 0px 10px 10px;
-
 }
 
 @supports ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) {
-    nav {
+    #topMenu {
         background-color: rgba(255, 255, 255, .35);
         -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
@@ -84,14 +88,7 @@ nav .navMenu {
     display: inline-block;
 }
 
-nav .mobileNavMenu {
-    display: none;
-    margin: auto 0;
-    width: 100%;
-    text-align: right;
-    opacity: 0;
-    animation: 1s fade ease forwards 1s;
-}
+
 
 nav .navMenu a {
     margin: 0px 10px;
@@ -133,33 +130,45 @@ nav .navMenu a:last-child {
     margin-right: 0px;
 }
 
+nav .mobileNavMenu {
+    display: none;
+    margin: auto 0;
+    width: 100%;
+    text-align: right;
+    opacity: 0;
+    animation: 1s fade ease forwards 1s;
+}
+
 .menuIcon {
     background: url("/img/menu.png");
     background-repeat: no-repeat;
-    width: 16px;
-    height: 50px;
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+    height: 30px;
     float: right;
     margin-right: 10px;
 }
 
-.mobilMenuList {
-    position: fixed;
+.mobileMenuList {
+    display: flex;
     top: 60px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background-color: white;
     color: var(--erka);
-    display: none;
-    opacity: 0;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
-.mobilMenuList a {
+.mobileMenuList a {
+    display: block;
     color: var(--erka);
     text-decoration: none;
     margin: 5px;
+    text-shadow: 0px 0px 5px white;
 }
 
 .banner {
