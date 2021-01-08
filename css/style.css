@@ -179,7 +179,10 @@ nav .mobileNavMenu {
 }
 
 .banner {
+    margin: auto;
     display: flex;
+    max-width: 1000px;
+    overflow: hidden;
 }
 
 .topBanner {
@@ -409,6 +412,11 @@ nav .mobileNavMenu {
 @media only screen and (max-width: 800px) {
     #topMenu {
         border-radius: 0px;
+        position: fixed;
+        box-shadow: 0px 0px 25px black
+    }
+    .topBanner{
+        padding-top: 60px;
     }
 
     .bannerPic img {
@@ -446,6 +454,10 @@ nav .mobileNavMenu {
     .callMeNumbers{
         border-left: 0px;
         padding-left: 0px;
+        text-align: center;
+    }
+    .callMeText{
+        text-align: center;
     }
 }
 

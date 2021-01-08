@@ -25,9 +25,14 @@ topMenuEffect.to("#topMenu", 0, {
 
 function scrollTopMenu() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    topMenuEffect.play()
+    if(screen.width > 800){
+        topMenuEffect.play()
+    }
+    
   } else {
-    topMenuEffect.reverse()
+    if(screen.width > 800){
+        topMenuEffect.reverse()
+    }
   }
 }
 
