@@ -56,6 +56,7 @@ body {
     background-color: rgba(255, 255, 255, .95);
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
+    box-shadow: 0px 0px 25px black;
 }
 
 nav {
@@ -94,9 +95,10 @@ nav .navMenu a {
     margin: 0px 10px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     opacity: 0;
+    text-shadow: 0px 0px 5px white;
 }
 
 nav .navMenu a:nth-child(1) {
@@ -127,7 +129,12 @@ nav .navMenu a:nth-child(3) {
 }
 
 nav .navMenu a:last-child {
+    animation: 1s fade ease forwards 1.9s;
     margin-right: 0px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
 }
 
 nav .mobileNavMenu {
@@ -281,7 +288,8 @@ nav .mobileNavMenu {
     width: 100%;
 }
 
-.whoarewe {
+#whoarewe {
+    scroll-margin-top: 10px;
     width: 100%;
     background-size: contain;
     background-position: right;
@@ -341,6 +349,50 @@ nav .mobileNavMenu {
     font-size: 12px;
     color: rgb(83, 80, 80);
 }
+#callMe {
+    scroll-margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: 1s fade ease forwards 1.3s;
+}
+
+.callMeTitle {
+    color: white;
+    padding: 10px;
+    background-color: var(--erka);
+    width: 100%;
+    font-weight: 800;
+    font-size: 30px;
+
+}
+.callMeContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 100px, rgba(255, 255, 255, 1)), url("/img/callmebg.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    text-shadow: 0px 0px 5px white;
+}
+.callMeText{
+    margin: auto;
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+.callMeNumbers{
+    flex: 1;
+    float: left;
+    margin: auto;
+}
 
 /* KEYFRAMES */
 
@@ -353,6 +405,10 @@ nav .mobileNavMenu {
 
 /*MOBILE DESIGN*/
 @media only screen and (max-width: 800px) {
+    #topMenu {
+        border-radius: 0px;
+    }
+
     .bannerPic img {
         display: none;
     }
@@ -386,3 +442,4 @@ nav .mobileNavMenu {
         background-position: center;
     }
 }
+
