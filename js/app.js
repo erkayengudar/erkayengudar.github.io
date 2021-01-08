@@ -2,6 +2,9 @@
 // import "TimelineLite.min.js";
 
 
+
+
+
 //when page is scrolled, topmenu will be fixed
 
 window.onscroll = function() {scrollTopMenu()};
@@ -66,9 +69,9 @@ $(".mobileMenuList a").click(function (e) {
 
 
 //who are we? effects
-var person1 = $("#person1")
-var person2 = $("#person2")
-var person3 = $("#person3")
+var person1 = $("#person1 *, person1")
+var person2 = $("#person2 *, person2")
+var person3 = $("#person3 *, person3")
 
 person1.hover(function () {
     person2.css("filter", "blur(8px)")
