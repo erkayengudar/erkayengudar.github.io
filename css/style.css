@@ -398,6 +398,14 @@ nav .mobileNavMenu {
     border-left: 2px solid var(--erka);
     padding-left: 10px;
 }
+.callButton, .whatsappButton{
+    text-decoration: none;
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 5px;
+    background: green;
+    color: white;
+}
 
 /* KEYFRAMES */
 
