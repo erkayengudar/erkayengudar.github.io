@@ -392,6 +392,8 @@ nav .mobileNavMenu {
     flex: 1;
     float: left;
     margin: auto;
+    border-left: 2px solid var(--erka);
+    padding-left: 10px;
 }
 
 /* KEYFRAMES */
@@ -440,6 +442,10 @@ nav .mobileNavMenu {
         padding: 300px 5px 20px 5px;
         text-align: justify;
         background-position: center;
+    }
+    .callMeNumbers{
+        border-left: 0px;
+        padding-left: 0px;
     }
 }
 
