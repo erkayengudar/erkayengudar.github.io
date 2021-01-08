@@ -19,10 +19,15 @@ topMenuEffect.to("#topMenu", 0, {
 })
 .to("#topMenu", 0, {
     boxShadow: '0px 0px 25px black',
+    height: '0px',
     ease: Power2.easeOut
 })
 .to(".topBanner", 0, {
     paddingTop: '60px',
+    ease: Power2.easeOut
+})
+.to("#topMenu", 0.5,{
+    height: "60px",
     ease: Power2.easeOut
 })
 
