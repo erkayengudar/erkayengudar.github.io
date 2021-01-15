@@ -4,6 +4,7 @@
 /*SPECIAL DEFINING*/
 :root {
     --erka: #411f89;
+    --erkaDark: #220c52;
 }
 
 
@@ -128,8 +129,17 @@ nav .navMenu a:nth-child(3) {
     animation: 1s fade ease forwards 1.6s;
 }
 
-nav .navMenu a:last-child {
+nav .navMenu a:nth-child(4) {
     animation: 1s fade ease forwards 1.9s;
+    margin-right: 0px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+nav .navMenu a:last-child {
+    animation: 1s fade ease forwards 2.2s;
     margin-right: 0px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -352,6 +362,7 @@ nav .mobileNavMenu {
     font-size: 12px;
     color: rgb(83, 80, 80);
 }
+
 #callMe {
     scroll-margin-top: 60px;
     display: flex;
@@ -371,7 +382,8 @@ nav .mobileNavMenu {
     font-size: 30px;
 
 }
-.callMeContainer{
+
+.callMeContainer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -385,20 +397,24 @@ nav .mobileNavMenu {
     padding-bottom: 100px;
     text-shadow: 0px 0px 5px white;
 }
-.callMeText{
+
+.callMeText {
     margin: auto;
     flex: 1;
     text-align: right;
     padding-right: 10px;
 }
-.callMeNumbers{
+
+.callMeNumbers {
     flex: 1;
     float: left;
     margin: auto;
     border-left: 2px solid var(--erka);
     padding-left: 10px;
 }
-.callButton, .whatsappButton{
+
+.callButton,
+.whatsappButton {
     text-decoration: none;
     padding: 5px;
     margin: 0px 5px 0px 5px;
@@ -407,12 +423,25 @@ nav .mobileNavMenu {
     color: white;
 }
 
-/* KEYFRAMES */
+.references {
+    background: white;
+    z-index: 1111;
+    padding: 20px 0 0 0;
+}
 
-@keyframes fade {
-    to {
-        opacity: 1;
-    }
+.refs {
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+#references{
+    scroll-margin-top: 60px;
 }
 
 
@@ -423,7 +452,8 @@ nav .mobileNavMenu {
         position: fixed;
         box-shadow: 0px 0px 25px black
     }
-    .topBanner{
+
+    .topBanner {
         padding-top: 60px;
     }
 
@@ -459,13 +489,134 @@ nav .mobileNavMenu {
         text-align: justify;
         background-position: center;
     }
-    .callMeNumbers{
+
+    .callMeNumbers {
         border-left: 0px;
         padding-left: 0px;
         text-align: center;
     }
-    .callMeText{
+
+    .callMeText {
         text-align: center;
     }
 }
 
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slideshow-container img{
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+
+/* Caption text */
+.refText {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--erka);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.refText a{
+    text-decoration: none;
+    color: var(--erka);
+    font-weight: 800;
+    font-size: 25px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: var(--erka);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    to {
+        opacity: 1
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.slide {
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 1.5s;
+    animation-name: slide;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide{
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.footer{
+    padding-top: 20px;
+    background-color: var(--erka);
+    color: white;
+}
+.footerInner{
+    background-color: var(--erkaDark);
+    padding-top: 5px;
+}
